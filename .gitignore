@@ -130,3 +130,7 @@ dmypy.json
 .idea/
 # Rever
 rever/
+
+# Custom (these are copied during Sphinx build)
+/docs/source/CHANGELOG.rst
+/docs/source/AUTHORS
