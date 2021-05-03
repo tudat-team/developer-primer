@@ -8,35 +8,34 @@ $ACTIVITIES = [
     'bibtex' # BibTex activity https://regro.github.io/rever-docs/activities.html#bibtex
 ]
 
-# VersionBump related --------------------------------------------------- #
+# Custom arguments ---------------------------------------------------------- #
+$REVER_CUSTOM_DIR = ".rever"
+
+# VersionBump related ------------------------------------------------------- #
 $VERSION_BUMP_PATTERNS = [  # These note where/how to find the version numbers
-    ('README.rst', r'\*\*Current Version:\*\*\s.*', '**Current Version:**$VERSION'),
+    ('README.rst', r'\*\*Current Version:\*\*\s.*', '**Current Version:** $VERSION'),
     ('docs/source/conf.py', r'release\s=\s.*', "release = '$VERSION'"),
-    ('docs/source/index.rst', r'\*\*Current Version:\*\*\s.*', '**Current Version:**$VERSION'),
+    ('docs/source/index.rst', r'\*\*Current Version:\*\*\s.*', '**Current Version:** $VERSION'),
 ]
 
-# Changelog related --------------------------------------------------- #
+# Changelog related --------------------------------------------------------- #
 $CHANGELOG_FILENAME = 'CHANGELOG.rst'  # Filename for the changelog
 $CHANGELOG_TEMPLATE = 'TEMPLATE.rst'  # Filename for the news template
 $CHANGELOG_AUTHORS_TITLE = 'Authors'
 $CHANGELOG_AUTHORS_FORMAT = '* {name}\n'
 
-# BibTex related
+# BibTex related ------------------------------------------------------------ #
 $BIBTEX_AUTHORS = 'G.H. Garrett'
 $BIBTEX_URL = 'https://github.com/tudat-team/developer-primer'
-$BIBTEX_PROJECT_NAME = "$PROJECT"
 
-# Authors related --------------------------------------------------- #
-$AUTHORS_FILENAME = 'AUTHORS'
+# Authors related ----------------------------------------------------------- #
+$AUTHORS_FILENAME = $REVER_CUSTOM_DIR + '/' + 'AUTHORS'
 $AUTHORS_TEMPLATE = '\n{authors}\n'
-$AUTHORS_FORMAT = '* {name}\n'
 $AUTHORS_LATEST = '$REVER_DIR/LATEST-AUTHORS.json'
-$AUTHORS_METADATA = '.authors.yml'
-$AUTHORS_SORTBY = 'num_commits'
-$AUTHORS_INCLUDE_ORGS = False
-$AUTHORS_MAILMAP = '.mailmap'
+$AUTHORS_METADATA = $REVER_CUSTOM_DIR + '/' + '.authors.yml'
+$AUTHORS_MAILMAP = '$REVER_CUSTOM_DIR/.mailmap'
 
-# GitHub related --------------------------------------------------- #
+# GitHub related ------------------------------------------------------------ #
 $PUSH_TAG_REMOTE = 'git@github.com:tudat-team/developer-primer.git'  # Repo to push tags to
 $GITHUB_ORG = 'tudat-team'  # Github org for Github releases and conda-forge
 $GITHUB_REPO = 'developer-primer'  # Github repo for Github releases  and conda-forge
