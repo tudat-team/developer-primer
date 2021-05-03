@@ -1,21 +1,26 @@
 $PROJECT = 'developer-primer'
 $ACTIVITIES = [
-    'authors', # Authors activity https://regro.github.io/rever-docs/activities.html#authors
-    'version_bump', # VersionBump activity https://regro.github.io/rever-docs/activities.html#versionbump
-    'changelog', # Changelog activity https://regro.github.io/rever-docs/activities.html#changelog
-    'tag', # Tag activity https://regro.github.io/rever-docs/activities.html#tag
-    'push_tag', # PushTag activity https://regro.github.io/rever-docs/activities.html#pushtag
-    'bibtex' # BibTex activity https://regro.github.io/rever-docs/activities.html#bibtex
+    'authors',
+    # Authors activity https://regro.github.io/rever-docs/activities.html#authors
+    'version_bump',
+    # VersionBump activity https://regro.github.io/rever-docs/activities.html#versionbump
+    'changelog',
+    # Changelog activity https://regro.github.io/rever-docs/activities.html#changelog
+    'tag',
+    # Tag activity https://regro.github.io/rever-docs/activities.html#tag
+    'push_tag',
+    # PushTag activity https://regro.github.io/rever-docs/activities.html#pushtag
+    'bibtex'
+    # BibTex activity https://regro.github.io/rever-docs/activities.html#bibtex
 ]
-
-# Custom arguments ---------------------------------------------------------- #
-$REVER_CUSTOM_DIR = ".rever"
 
 # VersionBump related ------------------------------------------------------- #
 $VERSION_BUMP_PATTERNS = [  # These note where/how to find the version numbers
-    ('README.rst', r'\*\*Current Version:\*\*\s.*', '**Current Version:** $VERSION'),
+    ('README.rst', r'\*\*Current Version:\*\*\s.*',
+     '**Current Version:** $VERSION'),
     ('docs/source/conf.py', r'release\s=\s.*', "release = '$VERSION'"),
-    ('docs/source/index.rst', r'\*\*Current Version:\*\*\s.*', '**Current Version:** $VERSION'),
+    ('docs/source/index.rst', r'\*\*Current Version:\*\*\s.*',
+     '**Current Version:** $VERSION'),
 ]
 
 # Changelog related --------------------------------------------------------- #
@@ -29,11 +34,12 @@ $BIBTEX_AUTHORS = 'G.H. Garrett'
 $BIBTEX_URL = 'https://github.com/tudat-team/developer-primer'
 
 # Authors related ----------------------------------------------------------- #
-$AUTHORS_FILENAME = $REVER_CUSTOM_DIR + '/' + 'AUTHORS'
+$AUTHORS_DIR = ".authors"  # this is custom
+$AUTHORS_FILENAME = $AUTHORS_DIR + '/' + 'AUTHORS'
 $AUTHORS_TEMPLATE = '\n{authors}\n'
 $AUTHORS_LATEST = '$REVER_DIR/LATEST-AUTHORS.json'
-$AUTHORS_METADATA = $REVER_CUSTOM_DIR + '/' + '.authors.yml'
-$AUTHORS_MAILMAP = '$REVER_CUSTOM_DIR/.mailmap'
+$AUTHORS_METADATA = $AUTHORS_DIR + '/' + '.authors.yml'
+$AUTHORS_MAILMAP = $AUTHORS_DIR + '/' + '.mailmap'
 
 # GitHub related ------------------------------------------------------------ #
 $PUSH_TAG_REMOTE = 'git@github.com:tudat-team/developer-primer.git'  # Repo to push tags to
