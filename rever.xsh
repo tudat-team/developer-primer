@@ -10,9 +10,9 @@ $ACTIVITIES = [
 
 # VersionBump related --------------------------------------------------- #
 $VERSION_BUMP_PATTERNS = [  # These note where/how to find the version numbers
-    ('README.rst', r'**Current Version:**\s.*', '**Current Version:**$VERSION'),
+    ('README.rst', r'\*\*Current Version:\*\*\s.*', '**Current Version:**$VERSION'),
     ('docs/source/conf.py', r'release\s=\s.*', "release = '$VERSION'"),
-    ('docs/source/index.rst', r'**Current Version:**\s.*', '**Current Version:**$VERSION'),
+    ('docs/source/index.rst', r'\*\*Current Version:\*\*\s.*', '**Current Version:**$VERSION'),
 ]
 
 # Changelog related --------------------------------------------------- #
