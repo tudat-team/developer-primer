@@ -7,4 +7,13 @@ Developer Primer Change Log
 v0.0.1
 ====================
 
+**Authors:**
+
+* Geoffrey H. Garrett
+
+
+
+v0.0.1
+====================
+
 
