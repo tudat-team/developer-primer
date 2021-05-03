@@ -1,4 +1,4 @@
-$PROJECT = 'Developer Primer'
+$PROJECT = 'developer-primer'
 $ACTIVITIES = [
     'authors', # Authors activity https://regro.github.io/rever-docs/activities.html#authors
     'version_bump', # VersionBump activity https://regro.github.io/rever-docs/activities.html#versionbump
