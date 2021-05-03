@@ -2,7 +2,7 @@
 👩‍💻 Developer Primer 👨‍💻
 ==========================
 
-**Current Version:** 0.0.1
+**Current Version:**0.0.1
 
 This project serves as a practice repository for new Tudat Developers following
 the `Tudat Developer Documentation`_.

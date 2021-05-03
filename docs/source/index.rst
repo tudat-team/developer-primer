@@ -6,7 +6,7 @@
 👩‍💻 Developer Primer 👨‍💻
 ============================
 
-**Current Version:** 0.0.1
+**Current Version:**0.0.1
 
 .. toctree::
    :maxdepth: 2
