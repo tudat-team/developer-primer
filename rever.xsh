@@ -10,9 +10,9 @@ $ACTIVITIES = [
 
 # VersionBump related --------------------------------------------------- #
 $VERSION_BUMP_PATTERNS = [  # These note where/how to find the version numbers
-    # ('README.rst', r'**Current Version:**\s.*', '**Current Version:**$VERSION*'),
-    # ('docs/source/conf.py', r'release\s=\s.*', "release = '$VERSION'"),
-    # ('docs/source/index.rst', r'**Current Version:**\s.*', '**Current Version:**$VERSION*'),
+    ('README.rst', r'**Current Version:**\s.*', '**Current Version:**$VERSION'),
+    ('docs/source/conf.py', r'release\s=\s.*', "release = '$VERSION'"),
+    ('docs/source/index.rst', r'**Current Version:**\s.*', '**Current Version:**$VERSION'),
 ]
 
 # Changelog related --------------------------------------------------- #
@@ -20,6 +20,11 @@ $CHANGELOG_FILENAME = 'CHANGELOG.rst'  # Filename for the changelog
 $CHANGELOG_TEMPLATE = 'TEMPLATE.rst'  # Filename for the news template
 $CHANGELOG_AUTHORS_TITLE = 'Authors'
 $CHANGELOG_AUTHORS_FORMAT = '* {name}\n'
+
+# BibTex related
+$BIBTEX_AUTHORS = 'G.H. Garrett'
+$BIBTEX_URL = 'https://github.com/tudat-team/developer-primer'
+$BIBTEX_PROJECT_NAME = "$PROJECT"
 
 # Authors related --------------------------------------------------- #
 $AUTHORS_FILENAME = 'AUTHORS'
