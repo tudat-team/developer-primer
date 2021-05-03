@@ -1,6 +1,6 @@
 $PROJECT = 'Developer Primer'
 $ACTIVITIES = [
-    # 'authors', # Authors activity https://regro.github.io/rever-docs/activities.html#authors
+    'authors', # Authors activity https://regro.github.io/rever-docs/activities.html#authors
     'version_bump', # VersionBump activity https://regro.github.io/rever-docs/activities.html#versionbump
     'changelog', # Changelog activity https://regro.github.io/rever-docs/activities.html#changelog
     'tag', # Tag activity https://regro.github.io/rever-docs/activities.html#tag
