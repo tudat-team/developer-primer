@@ -1,22 +1,18 @@
 $PROJECT = 'Developer Primer'
 $ACTIVITIES = [
-    # Authors activity https://regro.github.io/rever-docs/activities.html#authors
-    'authors',
-    # VersionBump activity https://regro.github.io/rever-docs/activities.html#versionbump
-    'version_bump',
-    # Changelog activity https://regro.github.io/rever-docs/activities.html#changelog
-    'changelog',
-    # Tag activity https://regro.github.io/rever-docs/activities.html#tag
-    'tag',
-    # PushTag activity https://regro.github.io/rever-docs/activities.html#pushtag
-    'push_tag',
+    'version_bump', # VersionBump activity https://regro.github.io/rever-docs/activities.html#versionbump
+    'changelog', # Changelog activity https://regro.github.io/rever-docs/activities.html#changelog
+    'tag', # Tag activity https://regro.github.io/rever-docs/activities.html#tag
+    'push_tag', # PushTag activity https://regro.github.io/rever-docs/activities.html#pushtag
+    'authors', # Authors activity https://regro.github.io/rever-docs/activities.html#authors
+    'bibtex' # BibTex activity https://regro.github.io/rever-docs/activities.html#bibtex
 ]
 
 # VersionBump related --------------------------------------------------- #
 $VERSION_BUMP_PATTERNS = [  # These note where/how to find the version numbers
-    ('README.rst', r'**Current Version:**\s.*', '**Current Version:**$VERSION*'),
-    ('docs/source/conf.py', r'release\s=\s.*', "release = '$VERSION'"),
-    ('docs/source/index.rst', r'**Current Version:**\s.*', '**Current Version:**$VERSION*'),
+    # ('README.rst', r'**Current Version:**\s.*', '**Current Version:**$VERSION*'),
+    # ('docs/source/conf.py', r'release\s=\s.*', "release = '$VERSION'"),
+    # ('docs/source/index.rst', r'**Current Version:**\s.*', '**Current Version:**$VERSION*'),
 ]
 
 # Changelog related --------------------------------------------------- #

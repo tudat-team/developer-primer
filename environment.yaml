@@ -4,6 +4,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - bibtexparser
   - python=3.8
   - rever
   - pip
